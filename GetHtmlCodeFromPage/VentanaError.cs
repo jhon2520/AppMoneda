@@ -33,10 +33,5 @@ namespace GetHtmlCodeFromPage
         {
             this.Opacity = 1;
         }
-
-        private void VentanaError_Load(object sender, EventArgs e)
-        {
-       
-        }
     }
 }

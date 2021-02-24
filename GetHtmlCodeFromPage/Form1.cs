@@ -31,7 +31,7 @@ namespace GetHtmlCodeFromPage
         {
             InitializeComponent();
             MensajesToolTip();
-            this.btnGetHtml.Click += new EventHandler(GetHtmlCode);
+            this.btnGetHtml.Click += new EventHandler(RunHttpCode);
         }
         private void DarValorAMonedas()
         {
@@ -52,10 +52,16 @@ namespace GetHtmlCodeFromPage
 
         }
 
-        private void GetHtmlCode(object sender, EventArgs args)
+        private void RunHttpCode(object sender, EventArgs args)
         {
             DarValorAMonedas();
+            GetHtmlCode();
+            ObtenerValor();
 
+        }
+
+        private void GetHtmlCode()
+        {
             Url = $"https://www.x-rates.com/calculator/?from={this.monedaAConvertir}&to={this.monedaConvertida}&amount={this.monto}";
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Url);
@@ -65,9 +71,8 @@ namespace GetHtmlCodeFromPage
             {
                 CodigoHTML = streamReader.ReadToEnd();
             }
-            ObtenerValor();
-
         }
+
         private string HallarString(string frase, string palabraInicial, string palabraFinal)
         {
             int indiceInicial = frase.IndexOf(palabraInicial) + palabraInicial.Length;
@@ -80,7 +85,6 @@ namespace GetHtmlCodeFromPage
 
         private void ObtenerValor()
         {
-       
             try
             {
                 if(continuar)

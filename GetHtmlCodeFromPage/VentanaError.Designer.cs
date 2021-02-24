@@ -119,7 +119,6 @@ namespace GetHtmlCodeFromPage
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VentanaError";
-            this.Load += new System.EventHandler(this.VentanaError_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.VentanaError_MouseDown);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.VentanaError_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -14,6 +14,8 @@ namespace GetHtmlCodeFromPage
     {
         private VentanaError ventanaError;
 
+       
+
         public Form2()
         {
             InitializeComponent();
@@ -72,11 +74,12 @@ namespace GetHtmlCodeFromPage
             }
             else
             {
-                ventanaError = new VentanaError("Debe escribir la palabra que desea buscar.");
-                ventanaError.ShowDialog();
+                using (ventanaError = new VentanaError("Debe escribir la palabra que desea buscar."))
+                {
+                    ventanaError.ShowDialog();
+                }
+                
             }
-
-    
         }
     }
 }

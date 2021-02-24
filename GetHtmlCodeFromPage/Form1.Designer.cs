@@ -41,20 +41,20 @@ namespace GetHtmlCodeFromPage
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pnlSuperior = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLista = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dragForm = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.tt = new System.Windows.Forms.ToolTip(this.components);
-            this.btnLista = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.pnlSuperior.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGetHtml
@@ -284,6 +284,30 @@ namespace GetHtmlCodeFromPage
             this.pnlSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlSuperior_MouseDown);
             this.pnlSuperior.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlSuperior_MouseUp);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GetHtmlCodeFromPage.Properties.Resources.money_bag_52px;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCerrar.BackgroundImage = global::GetHtmlCodeFromPage.Properties.Resources.close;
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Location = new System.Drawing.Point(525, -2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(28, 28);
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
@@ -305,6 +329,37 @@ namespace GetHtmlCodeFromPage
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(553, 239);
             this.panel1.TabIndex = 17;
+            // 
+            // btnLista
+            // 
+            this.btnLista.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLista.BackgroundImage = global::GetHtmlCodeFromPage.Properties.Resources.question_mark_512px;
+            this.btnLista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLista.FlatAppearance.BorderSize = 0;
+            this.btnLista.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnLista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLista.Location = new System.Drawing.Point(290, 81);
+            this.btnLista.Name = "btnLista";
+            this.btnLista.Size = new System.Drawing.Size(20, 20);
+            this.btnLista.TabIndex = 19;
+            this.btnLista.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackgroundImage = global::GetHtmlCodeFromPage.Properties.Resources.question_mark_512px1;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(521, 206);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(28, 28);
+            this.button1.TabIndex = 18;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -348,61 +403,6 @@ namespace GetHtmlCodeFromPage
             this.tt.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.tt.ToolTipTitle = "Información:";
             // 
-            // btnLista
-            // 
-            this.btnLista.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnLista.BackgroundImage = global::GetHtmlCodeFromPage.Properties.Resources.question_mark_512px;
-            this.btnLista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLista.FlatAppearance.BorderSize = 0;
-            this.btnLista.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnLista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLista.Location = new System.Drawing.Point(290, 81);
-            this.btnLista.Name = "btnLista";
-            this.btnLista.Size = new System.Drawing.Size(20, 20);
-            this.btnLista.TabIndex = 19;
-            this.btnLista.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackgroundImage = global::GetHtmlCodeFromPage.Properties.Resources.question_mark_512px1;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(521, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 28);
-            this.button1.TabIndex = 18;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GetHtmlCodeFromPage.Properties.Resources.money_bag_52px;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnCerrar.BackgroundImage = global::GetHtmlCodeFromPage.Properties.Resources.close;
-            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Location = new System.Drawing.Point(525, -2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(28, 28);
-            this.btnCerrar.TabIndex = 0;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -416,9 +416,9 @@ namespace GetHtmlCodeFromPage
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.pnlSuperior.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
